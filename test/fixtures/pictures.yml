@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  description: MyText
+  settings: MyString
+  season: MyString
+  location: MyString
+
+two:
+  description: MyText
+  settings: MyString
+  season: MyString
+  location: MyString
