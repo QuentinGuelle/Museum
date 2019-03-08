@@ -16,7 +16,7 @@
     <% @rblackandwhites.each do |rblackandwhite| %>
       <tr>
         <td><%= rblackandwhite.description %></td>
-        <td><%= rblackandwhite.link %></td>
+        <td><%= image_tag rblackandwhite.link %></td>
         <td><%= rblackandwhite.location %></td>
         <td><%= link_to 'Show', rblackandwhite %></td>
         <td><%= link_to 'Edit', edit_rblackandwhite_path(rblackandwhite) %></td>

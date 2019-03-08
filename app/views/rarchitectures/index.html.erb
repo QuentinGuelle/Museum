@@ -16,7 +16,7 @@
     <% @rarchitectures.each do |rarchitecture| %>
       <tr>
         <td><%= rarchitecture.description %></td>
-        <td><%= rarchitecture.link %></td>
+        <td><%= image_tag rarchitecture.link %></td>
         <td><%= rarchitecture.location %></td>
         <td><%= link_to 'Show', rarchitecture %></td>
         <td><%= link_to 'Edit', edit_rarchitecture_path(rarchitecture) %></td>
