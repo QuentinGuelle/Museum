@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @rarchitecture.description %>
+</p>
+
+<p>
+  <strong>Link:</strong>
+  <%= @rarchitecture.link %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @rarchitecture.location %>
+</p>
+
+<%= link_to 'Edit', edit_rarchitecture_path(@rarchitecture) %> |
+<%= link_to 'Back', rarchitectures_path %>

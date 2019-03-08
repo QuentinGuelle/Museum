@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :rblackandwhites
+  resources :rarchitectures
   resources :architectures
   resources :blackandwhites
   resources :exhibitions
