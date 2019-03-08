@@ -13,3 +13,25 @@
  *= require_tree .
  *= require_self
  */
+.image {
+	width: 200px;
+}
+
+.titre {
+	text-align:center;
+}
+
+.pres {
+	text-align:center;
+}
+
+.soustitre {
+	text-align:center;
+}
+
+.tableau {
+	margin-right:auto;
+	margin-left:auto;
+	border:5px;
+	width:75%;
+}

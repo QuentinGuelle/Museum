@@ -1,26 +1,30 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Rblackandwhites</h1>
+<h1 class="titre">Musée d'expositions photographiques</h1>
+<p class="pres">Ce musée met en avant mon travail photographique à travers différentes expositions ayant différents thèmes</p>
+<h2 class="soustitre">Exposition Noir et Blanc</h2>
 
-<table>
-  <thead>
+<table class="tableau">
+  <thead class="head_netb">
     <tr>
+      <th>Photo</th>
       <th>Description</th>
-      <th>Link</th>
-      <th>Location</th>
+      <th>Lieu de capture</th>
       <th colspan="3"></th>
     </tr>
   </thead>
-
+  <br>
   <tbody>
     <% @rblackandwhites.each do |rblackandwhite| %>
       <tr>
+        <td><%= image_tag rblackandwhite.link, class: 'image' %></td>
         <td><%= rblackandwhite.description %></td>
-        <td><%= image_tag rblackandwhite.link %></td>
         <td><%= rblackandwhite.location %></td>
+        <!--
         <td><%= link_to 'Show', rblackandwhite %></td>
         <td><%= link_to 'Edit', edit_rblackandwhite_path(rblackandwhite) %></td>
         <td><%= link_to 'Destroy', rblackandwhite, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      -->
       </tr>
     <% end %>
   </tbody>

@@ -8,7 +8,16 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
+  <header>
+    <table>
+      <tr>
+        <td><a href="#">Accueil</a></td>
+        <td><a href="#">Noir et Blanc</a></td>
+        <td><a href="#">Architecture</a></td>
+      </tr>
+    </table>
+  </header>
+  <!-- dispo sur toutes les pages -->
   <body>
     <%= yield %>
   </body>
