@@ -1,0 +1,2 @@
+class Blackandwhite < ApplicationRecord
+end

@@ -1,0 +1,17 @@
+<%= form_with(model: blackandwhite, local: true) do |form| %>
+  <% if blackandwhite.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(blackandwhite.errors.count, "error") %> prohibited this blackandwhite from being saved:</h2>
+
+      <ul>
+      <% blackandwhite.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :architectures
+  resources :blackandwhites
   resources :exhibitions
   resources :pictures
   root to: "exhibitions#index"
