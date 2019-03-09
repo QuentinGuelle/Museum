@@ -7,19 +7,21 @@
 <table class="tableau">
   <thead class="head_netb">
     <tr>
+      <!--
       <th>Photo</th>
       <th>Description</th>
       <th>Lieu de capture</th>
       <th colspan="3"></th>
+    -->
     </tr>
   </thead>
   <br>
-  <tbody>
+  <tbody class="collapse">
     <% @rblackandwhites.each do |rblackandwhite| %>
-      <tr>
-        <td><%= image_tag rblackandwhite.link, class: 'image' %></td>
-        <td><%= rblackandwhite.description %></td>
-        <td><%= rblackandwhite.location %></td>
+      <tr class="collapse">
+        <td class="borders"><%= image_tag rblackandwhite.link, class: 'image' %></td>
+        <td class="borders"><%= rblackandwhite.description %></td>
+        <td class="borders"><%= rblackandwhite.location %></td>
         <!--
         <td><%= link_to 'Show', rblackandwhite %></td>
         <td><%= link_to 'Edit', edit_rblackandwhite_path(rblackandwhite) %></td>
@@ -31,5 +33,6 @@
 </table>
 
 <br>
-
+<!--
 <%= link_to 'New Rblackandwhite', new_rblackandwhite_path %>
+-->

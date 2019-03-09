@@ -1,33 +1,38 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Musée d'expositions photographiques</h1>
-<p>Ce musée met en avant mon travail photographique à travers différentes expositions ayant différents thèmes</p>
-<h2>Exposition sur l'architecture</h2>
+<h1 class="titre">Musée d'expositions photographiques</h1>
+<p class="pres">Ce musée met en avant mon travail photographique à travers différentes expositions ayant différents thèmes</p>
+<h2 class="soustitre">Exposition Noir et Blanc</h2>
 
-<table>
-  <thead>
+<table class="tableau">
+  <thead class="head_netb">
     <tr>
+      <!--
       <th>Description</th>
       <th>Link</th>
       <th>Location</th>
       <th colspan="3"></th>
+    -->
     </tr>
   </thead>
-
-  <tbody>
+  <br>
+  <tbody class="collapse">
     <% @rarchitectures.each do |rarchitecture| %>
-      <tr>
-        <td><%= rarchitecture.description %></td>
-        <td><%= image_tag rarchitecture.link %></td>
-        <td><%= rarchitecture.location %></td>
+      <tr class="collapse">
+        <td class="borders"><%= image_tag rarchitecture.link, class: 'image' %></td>
+        <td class="borders"><%= rarchitecture.description %></td>
+        <td class="borders"><%= rarchitecture.location %></td>
+        <!--
         <td><%= link_to 'Show', rarchitecture %></td>
         <td><%= link_to 'Edit', edit_rarchitecture_path(rarchitecture) %></td>
         <td><%= link_to 'Destroy', rarchitecture, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      -->
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
-
+<!--
 <%= link_to 'New Rarchitecture', new_rarchitecture_path %>
+-->

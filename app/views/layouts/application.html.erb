@@ -8,15 +8,11 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-  <header>
-    <table>
-      <tr>
-        <td><a href="#">Accueil</a></td>
-        <td><a href="#">Noir et Blanc</a></td>
-        <td><a href="#">Architecture</a></td>
-      </tr>
-    </table>
-  </header>
+  <ul class="navul">
+    <li class="navli"><a href="#" class="nava">Accueil</a></li>
+    <li class="navli"><a href="/rblackandwhites" class="nava">Noir et Blanc</a></li>
+    <li class="navli"><a href="/rarchitectures" class="nava">Architecture</a></li>
+  </ul>
   <!-- dispo sur toutes les pages -->
   <body>
     <%= yield %>
