@@ -73,3 +73,21 @@
 .navli .nava:hover {
 	background-color: #111;
 }
+
+.btna {
+	background-color: #4CAF50;
+	font-size: 12px;
+	padding: 14px 40px;
+	border-radius: 12px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.btna:hover {
+	background-color: #4CAF50; /* Green */
+  	color: white;
+}
+
+.buthold {
+	text-align:center;
+}
